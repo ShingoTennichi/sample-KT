@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/sample-KT/static/css/main.31d6cfe0.css",
+    "main.js": "/sample-KT/static/js/main.cb013946.js",
+    "static/js/27.f251c50e.chunk.js": "/sample-KT/static/js/27.f251c50e.chunk.js",
+    "index.html": "/sample-KT/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.cb013946.js"
+  ]
+}
