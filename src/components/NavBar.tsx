@@ -4,6 +4,8 @@ import { useState } from 'react';
 
 
 function NavBar(): JSX.Element  {
+    // * this variable "path" is for deploy
+    const path: string = '/sample-KT';
     const navList: string[] = ["Home", "Our Services", "About Us", "Contact"];
     const [navState, setNavState] = useState(false);
     return(
@@ -18,7 +20,7 @@ function NavBar(): JSX.Element  {
                 <ul className='nav-items'>
                 {navList.map((item)=> {
                     return(
-                        <li key={item} ><Link to={`${item === 'Home' ? '/' : item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
+                        <li key={item} ><Link to={`${item === 'Home' ? path : path + '/' + item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
                     )
                 })}
                 </ul>
@@ -28,7 +30,7 @@ function NavBar(): JSX.Element  {
                 <ul className={navState ? 'hidden-nav-menu' : 'hidden-nav-menu hide'} onClick={()=> setNavState(!navState)}>
                 {navList.map((item)=> {
                     return(
-                        <li key={item}><Link to={`${item === 'Home' ? '/' : item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
+                        <li key={item}><Link to={`${item === 'Home' ? path : path + '/' + item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
                     )
                 })}
                 </ul>

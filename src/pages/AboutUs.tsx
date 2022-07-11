@@ -3,6 +3,9 @@ import '../CSS/AboutUs.css';
 import ScrollToTop from '../components/ScrollToTop';
 
 function AboutUs(): JSX.Element {
+    // * this variable "path" is for deploy
+    const path: string = '/sample-KT';
+
     return(
         <div className="about-us-container">
             <div className="about-us-welcome">
@@ -20,7 +23,7 @@ function AboutUs(): JSX.Element {
                     <span className='between-margin'></span>
                     <p>Our goal is to promote sustainable and Eco-friendly fabrics from Japan. We work with local businesses to provide non-Japanese customers with most up-to-date selection of products; and we work with you to understand your needs so we can recommend the best fabrics to meet your expectations.</p>
                     <span className='between-margin'></span>
-                    <p>We have some of the finest fabrics in the world that are made with new and traditional Japanese techniques. If you are looking for Japanese fabric, textile, or printed cloth. We want to support you! Please don't hesitate to contact us <Link to='/contact' className='link-to-contact-us' onClick={ScrollToTop}>here</Link>.</p>
+                    <p>We have some of the finest fabrics in the world that are made with new and traditional Japanese techniques. If you are looking for Japanese fabric, textile, or printed cloth. We want to support you! Please don't hesitate to contact us <Link to={path + '/contact'} className='link-to-contact-us' onClick={ScrollToTop}>here</Link>.</p>
                 </article>
             </section>
         </div>

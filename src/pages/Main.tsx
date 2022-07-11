@@ -5,6 +5,9 @@ import Card from '../components/Card';
 import ScrollToTop from '../components/ScrollToTop';
 
 function Main(): JSX.Element {
+    // * this variable "path" is for deploy
+    const path: string = '/sample-KT';
+
     const cardData = data.images;
     return(
         <>
@@ -26,7 +29,7 @@ function Main(): JSX.Element {
                 })}
                 </ul>
                 <div className='link-learn-more'>
-                    <Link className='link' to='/our-services' onClick={ScrollToTop}>Learn More About Our Services</Link>
+                    <Link className='link' to={path + '/our-services'} onClick={ScrollToTop}>Learn More About Our Services</Link>
                 </div>
             </div>
             <div className='promotion-container'>
@@ -58,12 +61,12 @@ function Main(): JSX.Element {
                 <span className='introduce-us-bg'>a</span>
                 <h2>Who Are We?</h2>
                 <p>Ken Trading started in 1987 in Osaka Japan.</p>
-                <Link to='/about-us' className='link' onClick={ScrollToTop}>Read More</Link>
+                <Link to={path + '/about-us'} className='link' onClick={ScrollToTop}>Read More</Link>
             </div>
             <div className='contact-us-container'>
                 <h3>Let's start making clothes together!</h3>
                 <p>Contact us here</p>
-                <Link to='/contact' className='link'onClick={ScrollToTop}>Contact Us</Link>
+                <Link to={path + '/contact'} className='link'onClick={ScrollToTop}>Contact Us</Link>
             </div>
         </>
     )

@@ -4,6 +4,9 @@ import data from '../JSON/data.json';
 import ScrollToTop from '../components/ScrollToTop';
 
 function OurServices (): JSX.Element {
+    // * this variable "path" is for deploy
+    const path: string = '/sample-KT';
+
     const products = data.products;
     console.log(products);
     return(
@@ -38,7 +41,7 @@ function OurServices (): JSX.Element {
                         </div>
                     </div>
                     <div style={{display: 'flex', margin:'auto'}}>
-                        <Link to={'/toabo-products'} className='link btn-explore'>Explore More</Link>
+                        <Link to={path + '/toabo-products'} className='link btn-explore'>Explore More</Link>
                     </div>
                 </div>
             </div>
@@ -55,7 +58,7 @@ function OurServices (): JSX.Element {
                     )
                 })}
                 </ul>
-                <div className='more-products'><Link to={'/contact'} className='link' onClick={ScrollToTop}>Contact Us to Know More Products<i className="fa-solid fa-paper-plane" style={{margin:'0 5px'}}/></Link></div>
+                <div className='more-products'><Link to={path + '/contact'} className='link' onClick={ScrollToTop}>Contact Us to Know More Products<i className="fa-solid fa-paper-plane" style={{margin:'0 5px'}}/></Link></div>
             </div>
         </div>
     )

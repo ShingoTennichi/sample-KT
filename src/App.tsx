@@ -10,6 +10,8 @@ import Page404 from './pages/Page404';
 
 
 function App(): JSX.Element {
+    // * this variable "path" is for deploy
+    const path: string = '/sample-KT';
     return (
         <Router>
             <>
@@ -19,10 +21,10 @@ function App(): JSX.Element {
                 <main>
                     <Routes>
                         {/* <Route path='/sample-KT/' element={<Main />} /> */}
-                        <Route path='/sample-KT/' element={<Main />} />
-                        <Route path='/sample-KT/' element={<OurServices />} />
-                        <Route path='/sample-KT/' element={<AboutUs />}/>
-                        <Route path='/sample-KT/' element={<Contact />} />
+                        <Route path={path + '/'} element={<Main />} />
+                        <Route path={path + '/our-services'} element={<OurServices />} />
+                        <Route path={path + '/about-us'} element={<AboutUs />}/>
+                        <Route path={path + '/contact'} element={<Contact />} />
                         <Route path='*' element={<Page404 />}></Route>
                     </Routes>
                 </main>
