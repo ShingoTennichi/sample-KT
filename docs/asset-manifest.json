@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/sample-KT/static/css/main.4e45565a.css",
-    "main.js": "/sample-KT/static/js/main.b581be3a.js",
-    "static/js/27.f251c50e.chunk.js": "/sample-KT/static/js/27.f251c50e.chunk.js",
+    "main.css": "/sample-KT/static/css/main.c935097d.css",
+    "main.js": "/sample-KT/static/js/main.2b88b0f5.js",
+    "static/js/27.58747da1.chunk.js": "/sample-KT/static/js/27.58747da1.chunk.js",
+    "static/media/BG_subway.png": "/sample-KT/static/media/BG_subway.6dc63c615fb0aabda782.png",
+    "static/media/BG_main.png": "/sample-KT/static/media/BG_main.4ac0cdc562ee718d8faa.png",
+    "static/media/BG_Osaka_castle.jpg": "/sample-KT/static/media/BG_Osaka_castle.4b428b66734dd388348a.jpg",
+    "static/media/BG_board.jpg": "/sample-KT/static/media/BG_board.a1a1d578e884d82c7b4a.jpg",
     "index.html": "/sample-KT/index.html"
   },
   "entrypoints": [
-    "static/css/main.4e45565a.css",
-    "static/js/main.b581be3a.js"
+    "static/css/main.c935097d.css",
+    "static/js/main.2b88b0f5.js"
   ]
 }

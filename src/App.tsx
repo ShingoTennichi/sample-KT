@@ -19,10 +19,10 @@ function App(): JSX.Element {
                 <main>
                     <Routes>
                         {/* <Route path='/sample-KT/' element={<Main />} /> */}
-                        <Route path='/' element={<Main />} />
-                        <Route path='/our-services' element={<OurServices />} />
-                        <Route path='/about-us' element={<AboutUs />}/>
-                        <Route path='/contact' element={<Contact />} />
+                        <Route path='/sample-KT/' element={<Main />} />
+                        <Route path='/sample-KT/' element={<OurServices />} />
+                        <Route path='/sample-KT/' element={<AboutUs />}/>
+                        <Route path='/sample-KT/' element={<Contact />} />
                         <Route path='*' element={<Page404 />}></Route>
                     </Routes>
                 </main>

@@ -1,7 +1,7 @@
 {
     "name": "ken-trading-ts",
     "version": "0.1.0",
-    "homepage": "http://localhost:3000/",
+    "homepage": "https://ShingoTennichi.github.io/sample-KT/",
     "type": "module",
     "private": true,
     "dependencies": {
