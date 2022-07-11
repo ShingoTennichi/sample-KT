@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sample-KT/static/css/main.c935097d.css",
-    "main.js": "/sample-KT/static/js/main.2b88b0f5.js",
+    "main.js": "/sample-KT/static/js/main.bdb4c955.js",
     "static/js/27.58747da1.chunk.js": "/sample-KT/static/js/27.58747da1.chunk.js",
     "static/media/BG_subway.png": "/sample-KT/static/media/BG_subway.6dc63c615fb0aabda782.png",
     "static/media/BG_main.png": "/sample-KT/static/media/BG_main.4ac0cdc562ee718d8faa.png",
@@ -11,6 +11,6 @@
   },
   "entrypoints": [
     "static/css/main.c935097d.css",
-    "static/js/main.2b88b0f5.js"
+    "static/js/main.bdb4c955.js"
   ]
 }
