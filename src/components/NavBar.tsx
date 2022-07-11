@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import '../CSS/NavBar.css';
 import { useState } from 'react';
+
 
 function NavBar(): JSX.Element  {
     const navList: string[] = ["Home", "Our Services", "About Us", "Contact"];
@@ -7,29 +9,29 @@ function NavBar(): JSX.Element  {
     return(
         <nav className="navbar-container">
             <div>
-                <h3>Ken Trading</h3>
-                <p>~since 1984~</p>
+                <Link to='/' className='ken-trading-icon'>
+                    <h3>Ken Trading</h3>
+                    <p>~since 1984~</p>
+                </Link>
             </div>
             <div>
                 <ul className='nav-items'>
                 {navList.map((item)=> {
                     return(
-                    <li key={item} className="nav-item">{item}</li>
+                        <li key={item} ><Link to={`${item === 'Home' ? '/' : item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
                     )
                 })}
                 </ul>
                 <button className='nav-btn' onClick={()=>setNavState(!navState)}>
                     <i className="fa-solid fa-bars"></i>
                 </button>
-                { navState ?
-                <ul className='hidden-nav-menu' onClick={()=> setNavState(!navState)}>
+                <ul className={navState ? 'hidden-nav-menu' : 'hidden-nav-menu hide'} onClick={()=> setNavState(!navState)}>
                 {navList.map((item)=> {
                     return(
-                    <li key={item} className="nav-item">{item}</li>
+                        <li key={item}><Link to={`${item === 'Home' ? '/' : item.toLowerCase().replace(" ", "-")}`} className="nav-item">{item}</Link></li>
                     )
                 })}
-                </ul>: <></>
-                }
+                </ul>
             </div>
         </nav>
     )

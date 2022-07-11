@@ -1,3 +1,8 @@
+.ken-trading-icon {
+    color: #112B3C;
+    text-decoration: none;
+}
+
 .navbar-container {
     padding: 2vw;
     height: 80px;
@@ -6,22 +11,22 @@
     justify-content: space-between;
 }
 
-
 .nav-items {
     display: flex;
     list-style: none;
 }
 
 .nav-item {
+    text-decoration: none;
     padding: 1vw 2vw;
-    margin: 0 1vw;
+    margin: 0 1vh;
     color: rgba(0,0,0,.55);
     border-radius: 4px;
     transition: 0.5s;
 }
 
 .nav-item:hover {
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
     background-color: rgba(0,0,0,.55);
 }
 
@@ -55,7 +60,7 @@
         list-style: none;
         width:100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         z-index: 1;
@@ -63,16 +68,21 @@
         transition: 0.5s;
     }
 
+    .hidden-nav-menu li {
+        margin: 3vh 0;
+    }
+
     .hidden-nav-menu .nav-item {
-        font-size: 3vh;
-        line-height: 3vh;
-        padding: 1vw 2vw;
-        margin: 1vw 0;
+        font-size: calc(1.5rem + 1vh);
         color: #ffffff;
     }
 
     .hidden-nav-menu .nav-item:hover {
         color: #112B3C;
         background-color: #ffffff;
+    }
+
+    .hide {
+        display: none;
     }
 }

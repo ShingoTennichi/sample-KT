@@ -14,12 +14,12 @@ h3,
 p {
     margin: 0;
     padding: 0;
+    font-weight: lighter;
 }
 
 body {
     font-size: 1.2rem;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.2rem;
+    font-family: 'Belleza', sans-serif;
     min-height: 100vh;
     color: #112B3C;
 }

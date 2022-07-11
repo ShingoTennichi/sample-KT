@@ -1,0 +1,56 @@
+{
+    "images": [
+        {
+            "id": "1",
+            "path": "images/IMG_professional.jpg",
+            "name": "professionals",
+            "title": "Specialize textile trading broker",
+            "article": "Professionals who provide textiles for clothing. Our sophisticated, comfortable process guides you to the right textiles to succeed in your business."
+        }, {
+            "id": "2",
+            "path": "images/IMG_high_quality_textile.jpg",
+            "name": "high quality textiles",
+            "title": "High quality",
+            "article": "Our many years of experience provide you with high quality textiles from trusted and reliable sources. Click here to learn more."
+        },{
+            "id": "3",
+            "path": "images/IMG_eco_activity.jpg",
+            "name": "recycling",
+            "title": "Let's Make Earth Beautiful",
+            "article": "We strongly recommend our recycled textiles as we expand using these products."
+        }],
+    "products": [{
+        "id": "twill_cloth",
+        "path": "images/IMG_twill_cloth.jpg",
+        "name": "Twill Cloth"
+    },{
+        "id": "fake_leather",
+        "path": "images/IMG_fake_leather.jpg",
+        "name": "Fake Leather"
+    },{
+        "id": "satin",
+        "path": "images/IMG_satin.jpg",
+        "name": "Satin",
+        "alt": "Satin"
+    },{
+        "id": "broad_cloth",
+        "path": "images/IMG_broad_cloth.jpg",
+        "name": "Broad Cloth"
+    },{
+        "id": "jersey",
+        "path": "images/IMG_jersey.jpg",
+        "name": "Jersey"
+    },{
+        "id": "japan_printed",
+        "path": "images/IMG_jpn_printed.jpg",
+        "name": "Japan Printed"
+    },{
+        "id": "mesh",
+        "path": "images/IMG_mesh.jpg",
+        "name": "Mesh"
+    },{
+        "id": "fake_fur",
+        "path": "images/IMG_fake_fur.jpg",
+        "name": "Fake Fur"
+    }]
+}
